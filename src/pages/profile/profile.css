@@ -1,0 +1,264 @@
+.my-account-container {
+    padding: 20px;
+    height: 80vh;
+    /* fixed height */
+}
+
+/* Sidebar titles and nav */
+.list-group-item {
+    border: none;
+    padding: 12px 15px;
+    cursor: pointer;
+    font-weight: 500;
+    background: transparent;
+}
+
+.list-group-item:hover {
+    background: #e6f4f1;
+}
+
+.list-group-item.active {
+    background: #d4edec;
+    color: #003d5c;
+    font-weight: 600;
+}
+
+/* Right content area */
+.content-area {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.scroll-content {
+    flex: 1;
+    overflow-y: auto;
+    background: #f9fcff;
+    border-radius: 10px;
+    padding: 20px;
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+/* Hide scrollbar in Chrome, Edge, Safari */
+.scroll-content::-webkit-scrollbar {
+    display: none;
+}
+
+.scrollable-orders {
+    scrollbar-width: none;
+}
+
+.scrollable-orders::-webkit-scrollbar {
+    display: none;
+    /* Chrome, Safari, Edge */
+}
+
+/* Order Cards */
+.order-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #ffffff;
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 15px;
+    flex-wrap: wrap;
+}
+
+.order-img {
+    border-radius: 6px;
+    width: 60px;
+    height: 60px;
+}
+
+.order-left {
+    flex: 1 1 auto;
+}
+
+.order-right {
+    min-width: 180px;
+}
+
+.address-title {
+    font-size: 20px;
+    font-weight: 600;
+    color: #16324f;
+    margin-bottom: 5px;
+}
+
+.address-subtitle {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+/* Grid Layout */
+.address-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+/* Address Card */
+.address-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.address-info h4 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.address-info p {
+    margin: 5px 0;
+    color: #444;
+}
+
+.default-badge {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 600;
+    background: #e6f2f2;
+    color: #16324f;
+    padding: 3px 8px;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+/* Actions */
+.address-actions {
+    margin-top: 15px;
+    display: flex;
+    gap: 10px;
+}
+
+.btn-profile {
+    flex: 1;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn.edit {
+    background: #16324f;
+    color: #fff;
+}
+
+.btn.edit:hover {
+    background: #0d2236;
+}
+
+.btn.delete {
+    background: #e74c3c;
+    color: #fff;
+}
+
+.btn.delete:hover {
+    background: #c0392b;
+}
+
+/* Add New */
+.add-new {
+    background: #f8fbfd;
+    border: 2px dashed #ccc;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    color: #16324f;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.add-new:hover {
+    border-color: #16324f;
+    background: #f0f6fa;
+}
+
+.finance-section {
+    color: #16324f;
+}
+
+/* Highlighted offer box */
+.offer-box {
+    background: #f8fbfd;
+    border-radius: 12px;
+    border: 1px solid #e1e7ec;
+}
+
+/* Step cards */
+.step-card {
+    background: #fff;
+    border: 1px solid #eee;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    height: 100%;
+}
+
+.step-card:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transform: translateY(-3px);
+}
+
+
+/*  Responsive Fixes */
+@media (max-width: 768px) {
+    .my-account-container {
+        padding: 5px 2px;
+        height: auto;
+    }
+
+    .list-group {
+        flex-direction: row !important;
+        overflow-x: auto;
+    }
+
+    .list-group-item {
+        flex: 1;
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .order-card {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .order-right {
+        text-align: left !important;
+        margin-top: 10px;
+    }
+
+    .scroll-content {
+        height: auto;
+        /* don’t fix height */
+        max-height: none;
+        overflow-y: visible;
+    }
+
+    .address-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .offer-box {
+        padding: 20px;
+    }
+
+    .step-card {
+        margin-bottom: 15px;
+    }
+}
