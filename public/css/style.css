@@ -6,76 +6,17 @@
 }
 
 body {
-  font-family: "Quicksand", sans-serif;
+  font-family: "Figtree", sans-serif;
   overflow-x: hidden;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Playfair Display", serif;
+    font-family: "Figtree", sans-serif;
 }
 
-/* ---------------------- header styles ---------------------- */
-/* .header-wrapper .header-top-wrapper { */
-  /* background-color: #06364c; */
-/* } */
-/*  */
-/* .header-wrapper svg, */
-/* .header-wrapper i { */
-  /* width: 20px; */
-  /* height: 20px; */
-/* } */
-/*  */
-/* .header-wrapper { */
-  /* position: absolute; */
-  /* width: 100%; */
-  /* z-index: 1; */
-/* } */
-/*  */
-/* .header-wrapper svg path, */
-/* .header-wrapper i { */
-  /* fill: #fff; */
-  /* color: #fff; */
-/* } */
-/*  */
-/* .header-wrapper.position-realtive svg path, */
-/* .header-wrapper.position-realtive i { */
-  /* fill: #000; */
-  /* color: #000; */
-/* } */
-/*  */
-/* .header-wrapper .btn-check:checked + .btn, */
-/* .header-wrapper .btn.active, */
-/* .btn.show, */
-/* .header-wrapper .btn:first-child:active, */
-/* .header-wrapper :not(.btn-check) + .btn:active { */
-  /* color: #000 !important; */
-  /* background-color: transparent !important; */
-  /* border-color: #fff !important; */
-/* } */
-/*  */
-/* .header-wrapper .dropdown-toggle::after { */
-  /* display: none; */
-/* } */
-/*  */
-/* .header-wrapper .dropdown { */
-  /* position: unset; */
-/* } */
-/*  */
-/* .logo-wrapper a.navbar-brand img.img-fluid { */
-  /* max-width: 300px; */
-/* } */
-/*  */
-/* header.header-wrapper.position-realtive { */
-  /* position: relative; */
-/* } */
-/*  */
-/* header.header-wrapper.position-realtive .text-white { */
-  /* color: #000 !important; */
-/* } */
-/*  */
-/* body header.header-wrapper.position-realtive .header-top-wrapper strong.text-white { */
-  /* color: #FFF !important; */
-/* } */
+.font-family {
+  font-family: "Figtree", sans-serif;
+}
 
 /* Accordion and slick styles */
 .accordion-button:not(.collapsed) {
@@ -85,6 +26,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Typography */
 .section-header-lg {
+  font-family: "Figtree", sans-serif !important;
   color: #000;
   font-size: 44px;
   line-height: 59px;
@@ -93,6 +35,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .sub-title {
+  font-family: "Figtree", sans-serif !important;
   color: #000;
   font-size: 20px;
   line-height: 27px;
@@ -138,29 +81,9 @@ nav .nav-link.active {
   box-shadow: none;
 }
 
-
-.trending_noe_wrapper .trending_now p {
-  color: #000;
-  font-size: 16px;
-  font-weight: 600;
-  line-height: 22px;
-  letter-spacing: 1.28px;
-  margin-top: 8px;
-}
-
-.best-selling-wrapper .tab-content .tab-pane_p {
-  color: #213245;
-  font-size: 14px;
-  line-height: 19px;
-  text-transform: none;
-  letter-spacing: 0;
-  text-align: center;
-  padding: 5px 15px;
-}
-
-.Exclusive_Offers_wrapper.bg-secondary {
-  background-color: #f4f2f0 !important;
-}
+/* .Exclusive_Offers_wrapper { */
+  /* background-color: #f4f2f0 !important; */
+/* } */
 
 .Exclusive_Offers_wrapper .Exclusive_Offers .offer {
   position: absolute;
@@ -272,11 +195,11 @@ footer .site-footer__item-inner a {
   list-style-type: none;
 }
 
-.build_engagement_wrapper .content_p {
-  font-size: 16px;
-  padding-left: 18px;
-  margin-top: 4px;
-}
+/* .build_engagement_wrapper .content_p { */
+  /* font-size: 16px; */
+  /* padding-left: 18px; */
+  /* margin-top: 4px; */
+/* } */
 
 .engagement-bulid-your-ring {
   background-color: #dee9eb4d;
@@ -309,12 +232,14 @@ footer .site-footer__item-inner a {
 
 .Ring-collection .main .slider-nav .slick-current p,
 .creste-your-own .main-slider .slider-nav-education .slick-current p {
+  font-family: "Figtree", sans-serif;
   color: #213245;
   font-weight: 700;
 }
 
 .Ring-collection .main .slider-nav p,
 .creste-your-own .main-slider .slider-nav-education p {
+  font-family: "Figtree", sans-serif;
   color: #21324566;
   font-size: 16px;
   line-height: 1.3;
@@ -334,6 +259,7 @@ footer .site-footer__item-inner a {
 }
 
 .slider-for .medium-up--one-half p {
+  font-family: "Figtree", sans-serif;
   font-weight: 500;
 }
 
@@ -393,11 +319,12 @@ footer .site-footer__item-inner a {
 }
 
 .help-grids p {
+  font-family: "Figtree", sans-serif;
   font-size: 20px;
 }
 
 .help-grid .fa-regular {
-  font-family: FontAwesome;
+  font-family: "Figtree", sans-serif;
   color: #00000043;
   text-decoration: none;
   font-size: 30px;
@@ -414,7 +341,6 @@ button.accordion-button {
   background: transparent !important;
   border-radius: 0 !important;
 }
-
 
 
 .terms-policy h2 {
